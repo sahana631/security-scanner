@@ -4,3 +4,4 @@ __pycache__/
 scan-results.json
 scan-results.txt
 .DS_Store
+.history/

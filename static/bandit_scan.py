@@ -4,7 +4,7 @@ import sys
 
 def run_bandit(target_path):
     result = subprocess.run(
-        ["bandit", "-r", target_path, "-f", "json", "-x", "*/.history/*"],
+        ["bandit", "-r", target_path, "-f", "json", "-x", "*/.history/*,*/venv/*"],
         capture_output=True,
         text=True
     )
